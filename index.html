@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="img-container">
+        <div class="boxi">
+            <img src="imgs/aang2.jpg" alt=""/>
+        </div>
+        <div class="boxi">
+            <img src="imgs/katara.jpg" alt=""/>
+        </div>
+        <div class="boxi">
+            <img src="imgs/sokka2.webp" alt=""/>
+        </div>
+        <div class="boxi">
+            <img src="imgs/korra2.jpg" alt=""/>
+        </div>
+    </div>
+    <div class="img-container2">
+        <div class="boxi2">
+            <img src="imgs/aang2.jpg" alt=""/>
+        </div>
+        <div class="boxi2">
+            <img src="imgs/katara.jpg" alt=""/>
+        </div>
+        <div class="boxi2">
+            <img src="imgs/sokka2.webp" alt=""/>
+        </div>
+        <div class="boxi2">
+            <img src="imgs/korra2.jpg" alt=""/>
+        </div>
+    </div>
+<script>
+    let imgContainer = document.querySelector(".img-container");
+    setInterval(()=> {
+        let last = imgContainer.firstElementChild;
+        last.remove();
+        imgContainer.appendChild(last);
+    }, 2500);
+</script>
+<script>
+    let imgContainer2 = document.querySelector(".img-container2");
+    setInterval(()=> {
+        let last = imgContainer2.firstElementChild;
+        last.remove();
+        imgContainer2.appendChild(last);
+    }, 2500);
+</script>
+</body>
+</html>
